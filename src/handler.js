@@ -83,14 +83,14 @@ const editNoteByIdHandler = (request, h) => {
     };
     const response = h.response({
       status: 'success',
-      message: 'catatan berhasil diperbaharui',
+      message: 'catatan berhasil diperbarui',
     });
     response.code(200);
     return response;
   }
   const response = h.response({
     status: 'fail',
-    message: 'gagal memperbaharui catatan, id tidak ditemukan',
+    message: 'gagal memperbarui catatan, id tidak ditemukan',
   });
   response.code(404);
   return response;
